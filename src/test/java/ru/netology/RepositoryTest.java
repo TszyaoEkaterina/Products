@@ -6,10 +6,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RepositoryTest {
     Repository repo = new Repository();
-    Book first = new Book(1, "book", 111, "first","Masha");
-    Book second = new Book(2, "book", 222, "second","Tom");
-    Smartphone third = new Smartphone(3, "smartphone", 333, "third", "apple");
-    Smartphone forth = new Smartphone(4, "smartphone", 444, "forth", "sony");
+    Book first = new Book(1, "book", 111, "bookName","Masha");
+    Book second = new Book(2, "book", 222, "bookName","Tom");
+    Smartphone third = new Smartphone(3, "smartphone", 333, "smartphoneName", "apple");
+    Smartphone forth = new Smartphone(4, "smartphone", 444, "smartphoneName", "sony");
+
 
     @Test
     void findAllWithRepoEmpty() {

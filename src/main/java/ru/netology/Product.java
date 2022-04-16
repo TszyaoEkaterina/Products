@@ -2,9 +2,9 @@ package ru.netology;
 
 public class Product {
     private int id;
-    private String name;
-    private int price;
     private String productName;
+    private int price;
+    private String name;
 
     public int getId() {
         return id;
@@ -12,10 +12,10 @@ public class Product {
     public String getName() {
         return name;
     }
-    public Product(int id, String name, int price, String productName) {
+    public Product(int id, String productName, int price,String name ) {
         this.id = id;
-        this.name = name;
-        this.price = price;
         this.productName = productName;
+        this.price = price;
+        this.name = name;
     }
 }
