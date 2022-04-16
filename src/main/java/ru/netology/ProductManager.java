@@ -2,9 +2,6 @@ package ru.netology;
 
 public class ProductManager {
     Repository repo = new Repository();
-    public ProductManager(Repository repo) {
-        this.repo = repo;
-    }
     public ProductManager() {}
     public Product[] findAll() {
         return repo.findAll();
