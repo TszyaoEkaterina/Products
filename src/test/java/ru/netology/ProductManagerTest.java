@@ -38,6 +38,7 @@ class ProductManagerTest {
         manager.add(second);
         Product[] actual = manager.searchBy("smartphone");
         Product[] expected = {};
+        assertArrayEquals(actual, expected);
     }
 
     @Test
@@ -47,6 +48,7 @@ class ProductManagerTest {
         manager.add(forth);
         Product[] actual = manager.searchBy("smartphone");
         Product[] expected = {forth};
+        assertArrayEquals(actual, expected);
     }
 
     @Test
@@ -57,5 +59,6 @@ class ProductManagerTest {
         manager.add(forth);
         Product[] actual = manager.searchBy("smartphone");
         Product[] expected = {third, forth};
+        assertArrayEquals(actual, expected);
     }
 }
