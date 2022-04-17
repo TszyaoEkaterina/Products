@@ -16,7 +16,6 @@ public class Product {
         this.name = name;
     }
     public Product() {}
-
     public boolean matches(String search) {
         if (name.contains(search)) {
             return true;

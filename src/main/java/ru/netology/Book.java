@@ -6,7 +6,6 @@ public class Book extends Product {
         super(id, productName, price, name);
         this.author = author;
     }
-
     @Override
     public boolean matches(String search) {
         if (super.matches(search)) { // вызов метода matches в версии описанной в Product
