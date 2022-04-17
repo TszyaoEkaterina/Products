@@ -9,15 +9,19 @@ public class Product {
     public int getId() {
         return id;
     }
-    public String getName() {
-        return name;
-    }
     public Product(int id, String productName, int price, String name) {
         this.id = id;
         this.productName = productName;
         this.price = price;
         this.name = name;
     }
+    public Product() {}
 
-
+    public boolean matches(String search) {
+        if (name.contains(search)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
